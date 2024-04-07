@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'fb9a411dd171b7eb3aae557cf32071d1';
+const BASE_URL = '9e4afdd0caacb031d7d51312a2d345eb';
 
 export const fetchMovie = async query => {
   const URL = `https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1`;
@@ -14,7 +14,7 @@ export const fetchMovie = async query => {
     const response = await axios.get(URL, options);
     return response.data;
   } catch (error) {
-    console.error("We have some problems.Try again");
+    console.error("Didn't work");
     throw error;
   }
 };
@@ -31,7 +31,7 @@ export const fetchDetails = async movieId => {
     const response = await axios.get(URL, options);
     return response.data;
   } catch (error) {
-    console.error("We have some problems.Try again");
+    console.error("Didn't work");
     throw error;
   }
 };
@@ -47,7 +47,7 @@ export const fetchCast = async movieId => {
     const response = await axios.get(URL, options);
     return response.data;
   } catch (error) {
-    console.error("We have some problems.Try again");
+    console.error("Didn't work");
     throw error;
   }
 };
@@ -63,7 +63,7 @@ export const fetchReviews = async movieId => {
     const response = await axios.get(URL, options);
     return response.data;
   } catch (error) {
-    console.error("We have some problems.Try again");
+    console.error("Didn't work");
     throw error;
   }
 };
@@ -79,7 +79,7 @@ export const fetchMovies = async () => {
     const response = await axios.get(URL, options);
     return response.data;
   } catch (error) {
-    console.error("We have some problems.Try again");
+    console.error("Didn't work");
     throw error;
   }
 };

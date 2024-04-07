@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom';
-import css from '../Navigation/Navigation.module.css';
+import { NavLink} from 'react-router-dom';
+import css from './Navigation.module.css';
 import clsx from 'clsx';
 
 const navClassName = ({ isActive }) =>
@@ -7,7 +7,7 @@ const navClassName = ({ isActive }) =>
     [css.active]: isActive,
   });
 
- const Navigation = ({movie}) => {
+ const Navigation = ({children}) => {
   return (
     <div>
       <header className={css.header}>
@@ -19,7 +19,7 @@ const navClassName = ({ isActive }) =>
         </NavLink>
       </header>
       <main>
-        {movie}
+        {children}
       </main>
     </div>
   );

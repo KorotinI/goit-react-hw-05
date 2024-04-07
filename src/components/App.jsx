@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import Loader from './Loader';
 import Navigation from './Navigation/Navigation';
-import ErrorPage from '../pages/ErrorPage/ErrorPage';
+import NotFoundPage from '../pages/NotFoundPage.module/NotFoundPage';
 
 const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
 const MoviePage = lazy(() => import("../pages/MoviePage/MoviePage"));
@@ -21,7 +21,7 @@ function App() {
           <Route path="cast" element={<MovieCast />} />
           <Route path="reviews" element={<MovieReviews />} />
         </Route>
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       </Suspense>
     </Navigation>

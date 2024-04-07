@@ -4,7 +4,7 @@ import { fetchMovie } from '../../addApi';
 import toast, { Toaster } from 'react-hot-toast';
 import SearchForm from '../../components/SearchForm/SearchForm';
 import Loader from '../../components/Loader';
-import { ErrorMessage } from '../../components/ErrorMessage/ErrorMessage';
+import { ErrorMessage } from '../../components/ErrorMassage/ErrorMassage';
 import MovieList from '../../components/MovieList/MovieList';
 
 const MoviePage = () => {

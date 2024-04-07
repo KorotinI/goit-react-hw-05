@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import css from './ErrorPage.module.css';
+import css from './NotFoundPage.module.css'
 
-const ErrorPage = () => {
+const NotFoundPage = () => {
   return (
     <div>
-      <h1>Something is wrong! </h1>
+      <h1>Opps, sorry</h1>
       <Link className={css.found} to="/">
         Home page
       </Link>
@@ -12,4 +12,4 @@ const ErrorPage = () => {
   );
 };
 
-export default ErrorPage;
+export default NotFoundPage;
